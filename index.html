@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Studio</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h1>UML Studio</h1>
+    </header>
+    <main>
+      <section class="editor" aria-labelledby="source-title">
+        <div class="panelbar">
+          <h2 id="source-title">Mermaid 코드</h2>
+          <div class="actions">
+            <button type="button" id="example">예제 불러오기</button>
+            <button type="button" id="open-file">열기</button>
+            <button type="button" id="save-file">저장</button>
+            <button type="button" id="save-as">다른 이름으로 저장</button>
+            <input type="file" id="mmd-file" accept=".mmd,text/plain" hidden>
+          </div>
+        </div>
+        <div class="source">
+          <textarea aria-labelledby="source-title" aria-describedby="error" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+          <pre id="error" role="alert" hidden></pre>
+        </div>
+      </section>
+      <section class="preview" aria-labelledby="preview-title">
+        <div class="panelbar">
+          <h2 id="preview-title">클래스 다이어그램</h2>
+          <output id="status" aria-live="polite"></output>
+          <div class="actions">
+            <label>색상 모드
+              <select id="color-mode">
+                <option value="color">컬러</option>
+                <option value="monochrome">흑백</option>
+              </select>
+            </label>
+            <label>이미지 형식
+              <select id="image-format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPG</option>
+              </select>
+            </label>
+            <button type="button" id="export-image">내보내기</button>
+          </div>
+        </div>
+        <p id="file-error" role="alert" hidden></p>
+        <div id="class-view" class="workspace">
+          <svg id="canvas" role="group" aria-labelledby="preview-title"></svg>
+        </div>
+        <div id="sequence-view" class="workspace" hidden>
+          <svg id="sequence-canvas" role="img" aria-labelledby="preview-title"></svg>
+        </div>
+        <footer id="class-tools">
+          <span>휠로 확대·축소하고 빈 배경을 드래그해 화면을 이동하세요. 관계선을 더블클릭하면 꺾임점이 추가됩니다.</span>
+          <label id="font-control" hidden>
+            글자 크기
+            <input id="font-size" type="number" step="1">
+            px
+          </label>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

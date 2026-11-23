@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "class",
+  "direction": null,
+  "classes": [
+    {
+      "name": "Animal",
+      "label": "Animal",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":3,"col":2,"offset":42},"end":{"line":3,"col":14,"offset":54}},
+        "statement": {"start":{"line":3,"col":2,"offset":42},"end":{"line":7,"col":3,"offset":110}}
+      },
+      "members": [
+        {
+          "kind": "field",
+          "visibility": "+",
+          "text": "+String name",
+          "range": {"start":{"line":4,"col":4,"offset":61},"end":{"line":4,"col":16,"offset":73}}
+        },
+        {
+          "kind": "field",
+          "visibility": "-",
+          "text": "-int age",
+          "range": {"start":{"line":5,"col":4,"offset":78},"end":{"line":5,"col":12,"offset":86}}
+        },
+        {
+          "kind": "method",
+          "visibility": "+",
+          "text": "+eat(food) void",
+          "range": {"start":{"line":6,"col":4,"offset":91},"end":{"line":6,"col":19,"offset":106}}
+        }
+      ]
+    },
+    {
+      "name": "Dog",
+      "label": "Dog",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":8,"col":2,"offset":113},"end":{"line":8,"col":11,"offset":122}},
+        "statement": {"start":{"line":8,"col":2,"offset":113},"end":{"line":8,"col":11,"offset":122}}
+      },
+      "members": []
+    }
+  ],
+  "relations": [
+    {
+      "index": 0,
+      "from": "Animal",
+      "to": "Dog",
+      "fromEnd": "extension",
+      "toEnd": "none",
+      "line": "solid",
+      "label": null,
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":9,"col":2,"offset":125},"end":{"line":9,"col":17,"offset":140}}
+    }
+  ],
+  "namespaces": [],
+  "styles": [],
+  "comments": [
+    {
+      "text": "%% @layout Animal 120 80",
+      "range": {"start":{"line":2,"col":2,"offset":15},"end":{"line":2,"col":26,"offset":39}}
+    }
+  ],
+  "unsupported": []
+}

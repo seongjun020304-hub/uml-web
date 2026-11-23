@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "class",
+  "direction": "LR",
+  "classes": [
+    {
+      "name": "Box",
+      "label": "Box",
+      "generic": "T",
+      "annotations": [],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":3,"col":2,"offset":30},"end":{"line":3,"col":13,"offset":41}},
+        "statement": {"start":{"line":3,"col":2,"offset":30},"end":{"line":3,"col":13,"offset":41}}
+      },
+      "members": []
+    },
+    {
+      "name": "Duck",
+      "label": "오리",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":4,"col":2,"offset":45},"end":{"line":4,"col":18,"offset":61}},
+        "statement": {"start":{"line":4,"col":2,"offset":45},"end":{"line":4,"col":18,"offset":61}}
+      },
+      "members": []
+    },
+    {
+      "name": "Flyer",
+      "label": "Flyer",
+      "generic": null,
+      "annotations": [
+        "interface"
+      ],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":5,"col":2,"offset":64},"end":{"line":5,"col":13,"offset":75}},
+        "statement": {"start":{"line":5,"col":2,"offset":64},"end":{"line":5,"col":13,"offset":75}}
+      },
+      "members": []
+    },
+    {
+      "name": "Dog",
+      "label": "Dog",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": false,
+      "range": {
+        "head": null,
+        "statement": null
+      },
+      "members": [
+        {
+          "kind": "method",
+          "visibility": "+",
+          "text": "+bark() void",
+          "range": {"start":{"line":7,"col":2,"offset":100},"end":{"line":7,"col":20,"offset":118}}
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "namespaces": [],
+  "styles": [
+    {
+      "kind": "style",
+      "targets": [
+        "Dog"
+      ],
+      "styleName": null,
+      "text": "style Dog fill:#f9f",
+      "range": {"start":{"line":8,"col":2,"offset":121},"end":{"line":8,"col":21,"offset":140}}
+    },
+    {
+      "kind": "classDef",
+      "targets": [
+        "warm"
+      ],
+      "styleName": null,
+      "text": "classDef warm fill:#fdd",
+      "range": {"start":{"line":9,"col":2,"offset":143},"end":{"line":9,"col":25,"offset":166}}
+    },
+    {
+      "kind": "cssClass",
+      "targets": [
+        "Dog",
+        "Duck"
+      ],
+      "styleName": "warm",
+      "text": "cssClass \"Dog,Duck\" warm",
+      "range": {"start":{"line":10,"col":2,"offset":169},"end":{"line":10,"col":26,"offset":193}}
+    }
+  ],
+  "comments": [],
+  "unsupported": [
+    {
+      "feature": "note",
+      "range": {"start":{"line":11,"col":2,"offset":196},"end":{"line":11,"col":19,"offset":213}}
+    }
+  ]
+}

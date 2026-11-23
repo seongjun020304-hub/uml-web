@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "sequence",
+  "participants": [
+    {
+      "name": "A",
+      "label": "A",
+      "type": "participant",
+      "declared": true,
+      "range": {"start":{"line":2,"col":2,"offset":18},"end":{"line":2,"col":15,"offset":31}}
+    },
+    {
+      "name": "B",
+      "label": "B",
+      "type": "participant",
+      "declared": true,
+      "range": {"start":{"line":3,"col":2,"offset":34},"end":{"line":3,"col":15,"offset":47}}
+    }
+  ],
+  "statements": [
+    {
+      "type": "blockStart",
+      "block": "loop",
+      "text": "매 초",
+      "range": {"start":{"line":4,"col":2,"offset":50},"end":{"line":4,"col":10,"offset":58}}
+    },
+    {
+      "type": "message",
+      "from": "A",
+      "to": "B",
+      "lineType": "solid",
+      "text": "ping",
+      "range": {"start":{"line":5,"col":4,"offset":63},"end":{"line":5,"col":15,"offset":74}}
+    },
+    {
+      "type": "blockEnd",
+      "block": "loop",
+      "range": {"start":{"line":6,"col":2,"offset":77},"end":{"line":6,"col":5,"offset":80}}
+    },
+    {
+      "type": "blockStart",
+      "block": "alt",
+      "text": "성공",
+      "range": {"start":{"line":7,"col":2,"offset":83},"end":{"line":7,"col":8,"offset":89}}
+    },
+    {
+      "type": "message",
+      "from": "B",
+      "to": "A",
+      "lineType": "solid",
+      "text": "ok",
+      "range": {"start":{"line":8,"col":4,"offset":94},"end":{"line":8,"col":14,"offset":104}}
+    },
+    {
+      "type": "activate",
+      "participant": "A",
+      "range": {"start":{"line":8,"col":4,"offset":94},"end":{"line":8,"col":14,"offset":104}}
+    },
+    {
+      "type": "message",
+      "from": "A",
+      "to": "B",
+      "lineType": "dotted",
+      "text": "ack",
+      "range": {"start":{"line":9,"col":4,"offset":109},"end":{"line":9,"col":16,"offset":121}}
+    },
+    {
+      "type": "deactivate",
+      "participant": "A",
+      "range": {"start":{"line":9,"col":4,"offset":109},"end":{"line":9,"col":16,"offset":121}}
+    },
+    {
+      "type": "blockDivider",
+      "block": "alt",
+      "text": "실패",
+      "range": {"start":{"line":10,"col":2,"offset":124},"end":{"line":10,"col":9,"offset":131}}
+    },
+    {
+      "type": "message",
+      "from": "B",
+      "to": "A",
+      "lineType": "solid",
+      "text": "error",
+      "range": {"start":{"line":11,"col":4,"offset":136},"end":{"line":11,"col":16,"offset":148}}
+    },
+    {
+      "type": "blockEnd",
+      "block": "alt",
+      "range": {"start":{"line":12,"col":2,"offset":151},"end":{"line":12,"col":5,"offset":154}}
+    },
+    {
+      "type": "blockStart",
+      "block": "opt",
+      "text": "선택",
+      "range": {"start":{"line":13,"col":2,"offset":157},"end":{"line":13,"col":8,"offset":163}}
+    },
+    {
+      "type": "message",
+      "from": "A",
+      "to": "B",
+      "lineType": "solid",
+      "text": "retry",
+      "range": {"start":{"line":14,"col":4,"offset":168},"end":{"line":14,"col":16,"offset":180}}
+    },
+    {
+      "type": "blockEnd",
+      "block": "opt",
+      "range": {"start":{"line":15,"col":2,"offset":183},"end":{"line":15,"col":5,"offset":186}}
+    },
+    {
+      "type": "note",
+      "placement": "rightOf",
+      "participants": [
+        "B"
+      ],
+      "text": "메모",
+      "range": {"start":{"line":16,"col":2,"offset":189},"end":{"line":16,"col":21,"offset":208}}
+    },
+    {
+      "type": "note",
+      "placement": "over",
+      "participants": [
+        "A",
+        "B"
+      ],
+      "text": "공통",
+      "range": {"start":{"line":17,"col":2,"offset":211},"end":{"line":17,"col":19,"offset":228}}
+    }
+  ],
+  "comments": [],
+  "unsupported": []
+}

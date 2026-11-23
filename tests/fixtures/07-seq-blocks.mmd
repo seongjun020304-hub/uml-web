@@ -1,0 +1,17 @@
+sequenceDiagram
+  participant A
+  participant B
+  loop 매 초
+    A->>B: ping
+  end
+  alt 성공
+    B->>+A: ok
+    A-->>-B: ack
+  else 실패
+    B->>A: error
+  end
+  opt 선택
+    A->>B: retry
+  end
+  Note right of B: 메모
+  Note over A,B: 공통

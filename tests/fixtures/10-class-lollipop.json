@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "class",
+  "direction": null,
+  "classes": [
+    {
+      "name": "Car",
+      "label": "Car",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":2,"col":2,"offset":15},"end":{"line":2,"col":11,"offset":24}},
+        "statement": {"start":{"line":2,"col":2,"offset":15},"end":{"line":2,"col":11,"offset":24}}
+      },
+      "members": []
+    }
+  ],
+  "relations": [
+    {
+      "index": 0,
+      "from": "Drivable",
+      "to": "Car",
+      "fromEnd": "lollipop",
+      "toEnd": "none",
+      "line": "solid",
+      "label": null,
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":3,"col":2,"offset":27},"end":{"line":3,"col":19,"offset":44}}
+    },
+    {
+      "index": 1,
+      "from": "Car",
+      "to": "Serializable",
+      "fromEnd": "none",
+      "toEnd": "lollipop",
+      "line": "solid",
+      "label": null,
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":4,"col":2,"offset":47},"end":{"line":4,"col":23,"offset":68}}
+    }
+  ],
+  "namespaces": [],
+  "styles": [],
+  "comments": [],
+  "unsupported": []
+}

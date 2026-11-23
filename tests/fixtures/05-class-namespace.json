@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "class",
+  "direction": null,
+  "classes": [
+    {
+      "name": "Animal",
+      "label": "Animal",
+      "generic": null,
+      "annotations": [],
+      "namespace": "Zoo",
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":3,"col":4,"offset":35},"end":{"line":3,"col":16,"offset":47}},
+        "statement": {"start":{"line":3,"col":4,"offset":35},"end":{"line":5,"col":5,"offset":74}}
+      },
+      "members": [
+        {
+          "kind": "field",
+          "visibility": "+",
+          "text": "+String name",
+          "range": {"start":{"line":4,"col":6,"offset":56},"end":{"line":4,"col":18,"offset":68}}
+        }
+      ]
+    },
+    {
+      "name": "Keeper",
+      "label": "Keeper",
+      "generic": null,
+      "annotations": [],
+      "namespace": "Zoo",
+      "declared": true,
+      "range": {
+        "head": {"start":{"line":6,"col":4,"offset":79},"end":{"line":6,"col":16,"offset":91}},
+        "statement": {"start":{"line":6,"col":4,"offset":79},"end":{"line":6,"col":16,"offset":91}}
+      },
+      "members": []
+    }
+  ],
+  "relations": [
+    {
+      "index": 0,
+      "from": "Keeper",
+      "to": "Animal",
+      "fromEnd": "none",
+      "toEnd": "dependency",
+      "line": "solid",
+      "label": null,
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":8,"col":2,"offset":98},"end":{"line":8,"col":19,"offset":115}}
+    }
+  ],
+  "namespaces": [
+    {
+      "name": "Zoo",
+      "range": {"start":{"line":2,"col":2,"offset":15},"end":{"line":7,"col":3,"offset":95}}
+    }
+  ],
+  "styles": [],
+  "comments": [],
+  "unsupported": []
+}

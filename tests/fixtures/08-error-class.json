@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "ok": false,
+  "errors": [
+    {
+      "message": "Parse error on line 5:",
+      "range": {"start":{"line":5,"col":9,"offset":60},"end":{"line":5,"col":11,"offset":62}},
+      "expected": [
+        "LINE",
+        "DOTTED_LINE"
+      ],
+      "found": "MINUS"
+    }
+  ]
+}

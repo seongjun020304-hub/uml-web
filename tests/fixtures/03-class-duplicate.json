@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "ok": true,
+  "kind": "class",
+  "direction": null,
+  "classes": [
+    {
+      "name": "A",
+      "label": "A",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": false,
+      "range": {
+        "head": null,
+        "statement": null
+      },
+      "members": []
+    },
+    {
+      "name": "B",
+      "label": "B",
+      "generic": null,
+      "annotations": [],
+      "namespace": null,
+      "declared": false,
+      "range": {
+        "head": null,
+        "statement": null
+      },
+      "members": []
+    }
+  ],
+  "relations": [
+    {
+      "index": 0,
+      "from": "A",
+      "to": "B",
+      "fromEnd": "none",
+      "toEnd": "dependency",
+      "line": "solid",
+      "label": "uses",
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":2,"col":2,"offset":15},"end":{"line":2,"col":16,"offset":29}}
+    },
+    {
+      "index": 1,
+      "from": "A",
+      "to": "B",
+      "fromEnd": "none",
+      "toEnd": "dependency",
+      "line": "solid",
+      "label": "uses",
+      "fromCardinality": null,
+      "toCardinality": null,
+      "range": {"start":{"line":3,"col":2,"offset":32},"end":{"line":3,"col":16,"offset":46}}
+    }
+  ],
+  "namespaces": [],
+  "styles": [],
+  "comments": [],
+  "unsupported": []
+}

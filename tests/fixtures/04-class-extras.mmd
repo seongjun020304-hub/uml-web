@@ -1,0 +1,11 @@
+classDiagram
+  direction LR
+  class Box~T~
+  class Duck["오리"]
+  class Flyer
+  <<interface>> Flyer
+  Dog : +bark() void
+  style Dog fill:#f9f
+  classDef warm fill:#fdd
+  cssClass "Dog,Duck" warm
+  note for Dog "주의"
